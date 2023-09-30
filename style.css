@@ -2,6 +2,7 @@
 @import url(./styles/banner.css);
 @import url(./styles/carrosel.css);
 @import url(./styles/topicos.css);
+@import url(./styles/contato.css);
 
 :root{
     --back: #EBECEE;
@@ -9,7 +10,11 @@
     --laranja: #EB9B00;
     --azul_gradiante: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --fonte: "Poppins";
-
+    --fonte_secundaria: "Josefin Sans";
+    --azul: #002f52;
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza_claro: #858585;
 }
 body{
     background-color: var(--back);
