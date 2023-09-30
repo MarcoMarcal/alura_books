@@ -1,0 +1,46 @@
+#cabecalho_menu{
+    width: 44px;
+    height: 44px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+}
+#cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#container{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+#container_imagem{
+    padding: 1em;
+}
+#lista_botao{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container_botao:checked:checked~#lista_botao{
+    display: block;
+}
+#lista_botao_principal,
+#lista_botao_item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+#lista_botao_principal{
+    color: var(--laranja);
+    font-weight: 700;
+}
+#lista_botao_link{
+    color: var(--azul_gradiante);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container_botao{
+    display: none;
+}
