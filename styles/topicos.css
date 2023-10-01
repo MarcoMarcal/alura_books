@@ -24,6 +24,10 @@
     padding: 1em;
     text-decoration: none;
 }
+#topico_links:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+}
 @media screen and (min-width: 1024px) {
     #titulo_topico,
     #topico_links{

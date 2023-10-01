@@ -97,3 +97,26 @@
     }
    
 }
+@media screen and (min-width: 1728px) {
+    #carrosel{
+        padding-bottom: 2em;
+    }
+    #carrosel_principal{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .swiper-pagination{
+        margin: 3em 0 1em 0;
+    }
+    .swiper{
+        width: 90%;
+    }
+    #card{
+        width: 70%;
+        margin: 3em  0 0 3em;
+    }
+    #card_cabecalho{
+        font-size: 32px;
+    }
+}

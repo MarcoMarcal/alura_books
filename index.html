@@ -17,7 +17,7 @@
     <header id="cabecalho">
         <div id="container">
             <input type="checkbox" id="menu" class="container_botao">
-            <label for="menu">
+            <label for="menu" class="cabecalho_rotulo">
              <span id="cabecalho_menu"></span>
             </label>
             <ul id="lista_botao">
@@ -43,7 +43,7 @@
         </div>
         <ul id="opcoes">
             <input type="checkbox" id="opcoes_botao" class="opcoes_item">
-            <label for="opcoes_botao">
+            <label for="opcoes_botao" class="opcoes_rotulo">
                 <li id="opcoes_menu">Categorias</li>
             </label>
             <ul id="lista_botao">
@@ -73,8 +73,14 @@
         </ul>
         <div id="container">
             <a href="#"><img src="./img/Favoritos.svg" alt="Coração" id="container_coracao"></a>
-            <a href="#"><img src="./img/Sacola.svg" alt="Carrinho Compras"></a>
-            <a href="#"><img src="./img/Usuário.svg" alt="Perfil"></a>
+            <a href="#" id="container_icone">
+                <img src="./img/Sacola.svg" alt="Carrinho Compras">
+                <p id="container_texto">Minha sacola</p>
+            </a>
+            <a href="#" id="container_icone">
+                <img src="./img/Usuário.svg" alt="Perfil">
+                <p id="container_texto">Meu perfil</p>
+            </a>
         </div>
     </header>
     <main>
@@ -86,6 +92,7 @@
         <section id="carrosel">
             <h2 id="lancamento">Novos Lançamentos</h2>
             
+            <div id="carrosel_principal">
             <!-- Slider main container -->
                 <div class="swiper">
                     <div class="swiper-pagination"></div>
@@ -124,11 +131,12 @@
                         <a href="#" id="botao_ancora">Saiba Mais</a>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section id="carrosel">
             <h2 id="lancamento">Mais vendidos</h2>
-            
+            <div id="carrosel_principal">
             <!-- Slider main container -->
                 <div class="swiper">
                     <div class="swiper-pagination"></div>
@@ -170,6 +178,7 @@
                         <a href="#" id="botao_ancora">Saiba Mais</a>
                     </div>
                 </div>
+            </div>
         </section>
         <section id="topico">
             <h2 id="titulo_topico">TÓPICOS VISITADOS RECENTEMENTE</h2>

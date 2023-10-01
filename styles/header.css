@@ -1,8 +1,17 @@
 #cabecalho_menu{
     width: 44px;
     height: 44px;
+    margin-left: 1em;
     background-image: url(../img/Menu.svg);
     display: inline-block;
+}
+.container_botao:checked ~ .cabecalho_rotulo > #cabecalho_menu{
+    background-image: url(../img/menu_hamburguer_light.svg);
+}
+.container_botao:checked ~ .cabecalho_rotulo{
+    background: var(--azul_gradiante);
+    padding: 0.9em 0;
+    padding-right: 1.5em;
 }
 #cabecalho{
     background-color: var(--branco);
@@ -50,7 +59,14 @@
 #opcoes{
     display: none;
 }
+#container_texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+    #container{
+        padding-right: 2em;
+    }
     #cabecalho_titulo{
         font-size: 30px;
         font-family: var(--fonte_secundaria);
@@ -84,5 +100,35 @@
     .opcoes_item:checked ~ #lista_botao{
         display: block;
         width: auto;
+    }
+    .opcoes_item:checked ~ .opcoes_rotulo > #opcoes_menu{
+        background: var(--azul_gradiante);
+        color: var(--branco);
+        padding: 1.85em 1em;
+    }
+    #lista_botao_item:hover{
+        background: var(--azul_gradiante);
+        color: var(--branco);
+    }
+
+}
+@media screen and (min-width: 1728px) {
+    #cabecalho_titulo{
+        padding-right: 1em;
+    }
+    #container{
+        padding: 0 4em;
+    }
+    #container_icone{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    #opcoes{
+        margin-right: auto;
+    }
+    #container_texto{
+        display: block;
     }
 }

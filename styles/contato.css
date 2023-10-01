@@ -86,3 +86,9 @@ hr{
         padding-left: 0.5em;
     }
 }
+@media screen and (min-width: 1728px) {
+    #rodape_lista{
+        border-left: 1px solid var(--cinza_claro);
+        padding: 1em;
+    }
+}
